@@ -20,6 +20,7 @@ cloudinary.config({
 
 const app = express();
 
+// Enable Cross-Origin Resource Sharing
 app.use(cors());
 
 app.use("/api/order/checkout/webhook", express.raw({ type: "*/*" }));
